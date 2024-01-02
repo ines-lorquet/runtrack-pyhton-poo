@@ -5,6 +5,7 @@ class Personne:
         
     def SePresenter(self):
         print("Je suis", self.utilisateur_prenom, self.utilisateur_nom)
+
 presentation1 = Personne("John", "Doe")
 presentation2 = Personne("Jean", "Dupond")
 presentation1.SePresenter()
