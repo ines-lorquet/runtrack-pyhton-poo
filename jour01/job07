@@ -1,0 +1,39 @@
+class Personnage:
+    def __init__(self,x,y):
+        self.position_x = x
+        self.position_y = y
+        
+    def gauche(self):
+        self.position_x -=1
+        print("Position pour aller à gauche",self.position_x)  
+
+    def droite(self):
+        self.position_x +=1
+        print("Position pour aller à droite",self.position_x) 
+
+    def bas(self):
+        self.position_y -=1
+        print("Position pour aller à bas",self.position_y)
+        
+    def haut(self):
+        self.position_y +=1
+        print("Position pour aller à haut",self.position_y)  
+
+    def position(self):
+        position_tuple=(self.position_x,self.position_y)
+        print(position_tuple)
+
+afficher_gauche = Personnage(10,20)
+afficher_gauche.gauche()
+
+afficher_droite = Personnage(10,20)
+afficher_droite.droite()
+
+afficher_bas = Personnage(10,20)
+afficher_bas.bas()
+
+afficher_haut = Personnage(10,20)
+afficher_haut.haut()
+
+afficher = Personnage(10,20)
+afficher.position()
