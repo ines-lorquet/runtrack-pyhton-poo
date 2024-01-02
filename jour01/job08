@@ -3,16 +3,16 @@ class Cercle:
     def __init__(self, rayon):
         self.donner_rayon = rayon
     
-    def changerRayon(self, n_rayon):
-        print("Le rayon est maintenant de", self.donner_rayon)        
+    def changerRayon(self):
+        print("Le rayon est maintenant de", self.donner_rayon)   
+
+    def afficherInfos(self, n_rayon):
+        print("Rayon :", self.donner_rayon)
         self.donner_rayon = n_rayon
         self.circonference()
         self.aire()
         self.diametre()
-
-    def afficherInfos(self):
-        print("Rayon :", self.donner_rayon)
-
+        
     def circonference(self):
         a = self.donner_rayon
         resultat = a * 2 *pi
