@@ -13,10 +13,10 @@ class Point:
         print("coordonné de y", self.coor_y)
     
     def changerX(self):
-        self.coor_x += 10
+        self.coor_x = 102
 
     def changerY(self):
-        self.coor_y +=10
+        self.coor_y =300
 
 donner= Point(100,210)
 donner.afficherLesPoints()
