@@ -23,17 +23,9 @@ class Personnage:
         position_tuple=(self.position_x,self.position_y)
         print(position_tuple)
 
-afficher_gauche = Personnage(10,20)
-afficher_gauche.gauche()
-
-afficher_droite = Personnage(10,20)
-afficher_droite.droite()
-
-afficher_bas = Personnage(10,20)
-afficher_bas.bas()
-
-afficher_haut = Personnage(10,20)
-afficher_haut.haut()
-
-afficher = Personnage(10,20)
-afficher.position()
+afficher_position = Personnage(10,20)
+afficher_position.gauche()
+afficher_position.droite()
+afficher_position.bas()
+afficher_position.haut()
+afficher_position.position()
