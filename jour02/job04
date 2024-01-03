@@ -21,9 +21,9 @@ class Student:
     def credit_total(self):
         return f"""
     Le nombre de crédit de {self.__nom} est de {self.get_nb_credit()} point."""
-    
+
     def set_nb_credit(self,nb_credit):
-        if nb_credit >= 0:
+        if nb_credit > 0:
             self.__nb_credit += nb_credit
 
     def add_credits(self):
@@ -48,7 +48,6 @@ class Student:
     ID = {self.get_nb_etudiant()}
     Niveau = {self.get_level()}
     """
-    
 
 etudiant1 = Student("Doe","John",145,0)
 etudiant1.add_credits()
@@ -56,4 +55,3 @@ etudiant1.add_credits()
 etudiant1.add_credits()
 print(etudiant1.credit_total())
 print(etudiant1.studentInfo())
-
