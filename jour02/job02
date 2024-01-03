@@ -16,8 +16,9 @@ class Livre:
     
     def get_nb_pages(self):
         return self.__nb_pages 
+    
     def set_nb_pages(self,nb_pages):
-        if nb_pages <= 0:
+        if nb_pages <= 0 and nb_pages !=int:
             print("ERREUR : le nombre de page entré est négatif")
         else:
             self.__nb_pages = nb_pages
@@ -36,5 +37,5 @@ livre2.set_titre("Boulevard du tueur")
 print(livre2.get_titre())
 livre2.set_auteur("Jeannette")
 print(livre2.get_auteur())
-livre2.set_nb_pages(0)
+livre2.set_nb_pages(-4)
 
