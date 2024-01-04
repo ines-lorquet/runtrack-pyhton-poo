@@ -54,7 +54,7 @@ class CompteBancaire:
             return self.get_solde()
         else:
             pass
-    
+
     def virement(self,ref,compte,montant):
         if self.get_solde() >= 0:
             self.retrait(montant)
