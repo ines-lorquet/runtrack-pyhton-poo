@@ -18,7 +18,7 @@ class Vehicule:
         print(f"La Marque : {self.get_marque()}")
         print(f"Le Modèle : {self.get_modele()}")
         print(f"L'année : {self.get_annee()}")
-        print(f"Le Prix : {self.get_prix()}")
+        print(f"Le Prix : {self.get_prix()}€")
         
     def demarrer(self):
         print("Attention je roule")
@@ -36,12 +36,12 @@ class Voiture(Vehicule):
         print(f"La Marque : {self.get_marque()}")
         print(f"Le Modèle : {self.get_modele()}")
         print(f"L'année : {self.get_annee()}")
-        print(f"Le Prix : {self.get_prix()}")
+        print(f"Le Prix : {self.get_prix()} €")
         print(f"Nombres Portes : {self.get_portes()}")
 
     def demarrer(self):
-        print("Attention je fais des drifts")
-        
+        print("Attention je fais des drifts\n")
+
         
 class Moto(Vehicule):
     def __init__(self,marque,modele,annee,prix):
@@ -55,7 +55,7 @@ class Moto(Vehicule):
         print(f"La Marque : {self.get_marque()}")
         print(f"Le Modèle : {self.get_modele()}")
         print(f"L'année : {self.get_annee()}")
-        print(f"Le Prix : {self.get_prix()}")
+        print(f"Le Prix : {self.get_prix()} €")
         print(f"Nombre de roue : {self.get_roue()}")
         
     def demarrer(self):
