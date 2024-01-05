@@ -15,7 +15,10 @@ class Personne:
         print("Hello")
         
     def modifierAge(self,entier):
-        self.set_age(entier)
+        if entier == int:
+            self.set_age(entier)
+        else:
+            print("L'âge rentré n'est pas un entier" )
         
 class Eleve(Personne):
         
