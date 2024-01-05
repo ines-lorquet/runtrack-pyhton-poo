@@ -42,7 +42,7 @@ personne1.afficherAge()
 
 personne1.bonjour()
 eleve1.allerEnCours()
-personne1.modifierAge(15.5)
+personne1.modifierAge(15)
 personne1.afficherAge()
 
 professeur1.enseigner()
