@@ -44,5 +44,5 @@ class Jeu:
 
             print(f"\nPlayer : {joueur.nom} ({joueur.vie} HP) VS {ennemi.nom} ({ennemi.vie} HP).\n")
 
-jeu = Jeu()
-jeu.lancerJeu()
+parti1 = Jeu()
+parti1.lancerJeu()
