@@ -1,13 +1,13 @@
 class Forme:
     def aire(self):
         return 0
-    
-    
+
+
 class Rectangle(Forme):
     def __init__(self,hauteur,largeur):
         self.hauteur = hauteur
         self.largeur = largeur
-        
+
     def get_hauteur(self):
         return self.hauteur
     
@@ -17,8 +17,8 @@ class Rectangle(Forme):
     def aire(self):
         rectangle = self.get_hauteur() * self.get_largeur()
         return rectangle
-    
-    
+
+
 class Cercle(Forme):
     def __init__(self,radius):
         self.radius = radius
